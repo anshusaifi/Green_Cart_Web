@@ -7,7 +7,7 @@ import Drivers from "./Pages/Drivers";
 import RoutesPage from "./Pages/Routes";
 import Orders from "./Pages/Orders";
 import Login from "./Pages/Login";
-import ProtectedRoute from "./Components/ProtectedRoutes";
+import ProtectedRoute from "./Components/protectedRoutes";
 
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
