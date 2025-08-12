@@ -22,7 +22,7 @@ export default function Login({ onLogin }) {
     try {
       if (isLogin) {
         // Login request
-        const res = await api.post("/auth/login", {
+        const res = await api.post("auth/login", {
           email: form.email,
           password: form.password,
         });
@@ -38,7 +38,7 @@ export default function Login({ onLogin }) {
 
       } else {
         // Signup request
-        const res = await api.post("/auth/signup", {
+        const res = await api.post("auth/signup", {
           firstName: form.firstName,
           lastName: form.lastName,
           email: form.email,
